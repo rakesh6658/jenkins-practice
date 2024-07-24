@@ -11,4 +11,12 @@ stages{
     }
 
 }
+post{
+    always{
+        echo 'succcess or failure'
+    }
+    success {
+        echo 'success  '
+    }
+}
 }
