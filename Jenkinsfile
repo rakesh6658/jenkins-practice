@@ -19,6 +19,15 @@ stages{
     }
 
 }
+        stage('Example Username/Password') {
+            environment {
+                SERVICE_CREDS = credentials('ssh-auth')
+            }
+            steps {
+                sh echo" $SERVICE_CREDS "
+            }
+        }
+
 post{
     always{
         echo 'succcess or failure'
