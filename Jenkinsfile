@@ -7,7 +7,7 @@ pipeline{
     }
      environment { 
         name = 'rakesh'
-        sh '"$printenv"'
+        sh '"$name"'
     }
 
 stages{
