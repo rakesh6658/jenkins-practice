@@ -2,6 +2,12 @@ pipeline{
     agent {
         node { label 'agent1'}
     }
+    options {
+        ansiColor('xterm')
+    }
+     environment { 
+        name = 'rakesh'
+    }
 
 stages{
     stage('build'){
