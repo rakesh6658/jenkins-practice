@@ -11,14 +11,15 @@ pipeline{
     }
 
 stages{
-    stage('build'){
-        steps{
-            echo 'welcome to jenkins'
-            echo "my name is $name"
+    stage('Example Username/Password'){
+            environment {
+                SERVICE_CREDS = credentials('ssh-auth')
+            }
+            steps {
+                sh echo" $SERVICE_CREDS "
+            }
         }
-    }
 
-}
   
 post{
     always{
