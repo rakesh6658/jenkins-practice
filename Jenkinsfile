@@ -16,7 +16,7 @@ stages{
                 SERVICE_CREDS = credentials('ssh-auth')
             }
             steps {
-                sh echo" $SERVICE_CREDS "
+                sh 'echo" $SERVICE_CREDS "'
             }
         }
 }
