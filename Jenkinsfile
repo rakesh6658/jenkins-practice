@@ -14,7 +14,7 @@ stages{
     stage('build'){
         steps{
             echo 'welcome to jenkins'
-            sh '$name'
+            echo "my name is $name"
         }
     }
 
