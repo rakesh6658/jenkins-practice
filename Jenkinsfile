@@ -7,13 +7,14 @@ pipeline{
     }
      environment { 
         name = 'rakesh'
-        sh '"$name"'
+    
     }
 
 stages{
     stage('build'){
         steps{
             echo 'welcome to jenkins'
+            sh '$name'
         }
     }
 
