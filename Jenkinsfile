@@ -7,6 +7,7 @@ pipeline{
     }
      environment { 
         name = 'rakesh'
+        sh 'printenv'
     }
 
 stages{
