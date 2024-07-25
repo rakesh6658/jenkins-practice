@@ -19,7 +19,7 @@ stages{
                 sh echo" $SERVICE_CREDS "
             }
         }
-
+}
   
 post{
     always{
